@@ -42,7 +42,7 @@ public class ComentarioController {
         comentarioService.deleteComentario(id);
     }
 
-    @GetMapping("/foro/FindAll")
+    @GetMapping("/comentario/FindAll")
     public List <Comentario> obtenerForo(){
         return comentarioService.findAll();
     }
