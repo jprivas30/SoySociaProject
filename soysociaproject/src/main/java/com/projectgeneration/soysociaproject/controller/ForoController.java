@@ -28,7 +28,7 @@ public class ForoController {
     }
     
     @PostMapping("/foro/Save")
-    public void guardarForo(@RequestBody Foro foro){
+    void guardarForo(@RequestBody Foro foro){
         foroService.saveForo(foro);
     }
 
@@ -46,4 +46,5 @@ public class ForoController {
     public List <Foro> obtenerForo(){
         return foroService.findAll();
     }
+
 }

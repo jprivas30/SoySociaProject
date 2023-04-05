@@ -13,11 +13,11 @@ import com.projectgeneration.soysociaproject.repository.ForoRepository;
 @Service
 @Transactional
 public class ForoService {
-
+    
     private ForoRepository foroRepository;
 
     public ForoService(@Autowired ForoRepository foroRepository){
-        this.foroRepository= foroRepository;
+        this.foroRepository = foroRepository;
     }
 
     public void saveForo(Foro foro){
@@ -27,7 +27,7 @@ public class ForoService {
     public void updateForo(Foro foro){
         this.foroRepository.save(foro);
     }
-    
+
     public void deleteForo(Integer id){
         foroRepository.deleteById(id);
     }
@@ -35,5 +35,5 @@ public class ForoService {
     public List<Foro> findAll(){
         return foroRepository.findAll();
     }
-}
 
+}

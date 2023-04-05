@@ -17,6 +17,7 @@ import lombok.Setter;
 
 @Entity(name = "Foro")
 public class Foro {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,7 +25,7 @@ public class Foro {
     private String titulo;
     private String categoria;
     private String contenido;
-    private Integer usuario_id;
     private String fecha;
+    private String usuario_id;
 
 }
