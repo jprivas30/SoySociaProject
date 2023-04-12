@@ -36,5 +36,8 @@ public class UserService {
         return userRepository.findAll();
     }
 
+    public List<User> Colaboradora(){
+        return userRepository.findColaboradora();
+    }
 
 }
