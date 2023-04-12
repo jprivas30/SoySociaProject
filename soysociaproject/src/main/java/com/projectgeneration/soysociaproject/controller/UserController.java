@@ -47,4 +47,10 @@ public class UserController {
     public List <User> obtenerUser(){
         return userService.findAll();
     }
+
+    @GetMapping("/User/Colaboradora")
+    public List<User> Colaboradora(){
+        return userService.Colaboradora();
+    }
+    
 }

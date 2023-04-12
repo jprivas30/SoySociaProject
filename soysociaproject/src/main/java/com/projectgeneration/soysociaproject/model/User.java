@@ -37,5 +37,6 @@ public class User {
     private char status;
     private String descripcion;
     private String imagen;
+    private String rol;
 }
 
