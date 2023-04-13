@@ -36,7 +36,7 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public List<User> Colaboradora(){
+    public List<User> findColaboradora(){
         return userRepository.findColaboradora();
     }
 

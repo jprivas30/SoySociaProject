@@ -9,7 +9,7 @@ import com.projectgeneration.soysociaproject.model.User;
 
 public interface UserRepository extends JpaRepository <User, Integer>{
     
-    @Query(value = "SELECT * FROM Usuario WHERE rol = 'Colaboradora'", nativeQuery=true)
+    @Query(value = "SELECT * FROM usuario WHERE rol='Colaboradora'", nativeQuery=true)
     List <User> findColaboradora();
     
 }

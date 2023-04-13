@@ -48,9 +48,9 @@ public class UserController {
         return userService.findAll();
     }
 
-    @GetMapping("/User/Colaboradora")
-    public List<User> Colaboradora(){
-        return userService.Colaboradora();
+    @GetMapping("/user/Partner")
+    public List<User> obtenerColaboradora(){
+        return userService.findColaboradora();
     }
     
 }

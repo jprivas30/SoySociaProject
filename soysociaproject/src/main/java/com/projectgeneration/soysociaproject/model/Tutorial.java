@@ -14,13 +14,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-@Entity(name = "Tutorial")
+@Entity(name ="tutorial")
 public class Tutorial {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+    private Integer tutorial_id;
     private String titulo;
     private String descripcion;
     private String contenido;

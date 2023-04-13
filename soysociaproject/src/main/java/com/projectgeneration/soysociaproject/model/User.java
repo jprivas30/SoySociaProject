@@ -15,13 +15,12 @@ import lombok.Setter;
 @Getter
 @Setter
 
-@Entity(name = "Usuario")
+@Entity(name ="usuario")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+    private Integer usuario_id;
     private String nombre;
     private String apellido;
     private String rut;
